@@ -9,6 +9,7 @@ use MrShan0\PHPFirestore\Helpers\FirestoreHelper;
 
 class FirestoreDatabaseResource
 {
+    // test
     /**
      * @var \MrShan0\PHPFirestore\FirestoreClient
      */
