@@ -219,7 +219,7 @@ class FirestoreDatabaseResource
         }
 
         $response = $this->client->request('PATCH', 'documents/' . FirestoreHelper::normalizeCollection($documentPath), array_merge($options, [
-            'json' => FirestoreHelper::decode($document->toJson())
+            'body' => $document->toJson()
         ]), $parameters);
 
         return new FirestoreDocument($response);
